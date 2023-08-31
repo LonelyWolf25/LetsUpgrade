@@ -1,0 +1,41 @@
+To count the number of prime numbers in an integer array, you can implement a function that checks whether each number in the array is prime or not. Here's an algorithm to achieve this:
+
+1. Define a function to check if a number is prime.
+2. Initialize a variable to keep track of the count of prime numbers.
+3. Iterate through the array.
+4. For each element, use the prime-checking function to determine if it's prime.
+5. If the element is prime, increment the count.
+6. Continue iterating through the array.
+7. Return the count of prime numbers.
+
+Here's a Python implementation of this algorithm:
+
+```python
+def is_prime(num):
+    if num <= 1:
+        return False
+    if num <= 3:
+        return True
+    if num % 2 == 0 or num % 3 == 0:
+        return False
+    i = 5
+    while i * i <= num:
+        if num % i == 0 or num % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+def count_primes_in_array(arr):
+    prime_count = 0
+    for num in arr:
+        if is_prime(num):
+            prime_count += 1
+    return prime_count
+
+# Example usage
+arr = [2, 3, 5, 7, 10, 11, 13, 15]
+prime_count = count_primes_in_array(arr)
+print("Number of prime numbers:", prime_count)  # Output should be 6 (2, 3, 5, 7, 11, 13)
+```
+
+Replace the `arr` list with your own list of integers to count the prime numbers in your specific case. The `is_prime` function checks whether a given number is prime using the optimized primality testing algorithm.
