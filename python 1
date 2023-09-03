@@ -1,0 +1,21 @@
+You can create a Python program to perform these operations as follows:
+
+```python
+# Taking user inputs for variables a and b
+a = float(input("Enter the value of 'a': "))
+b = float(input("Enter the value of 'b': "))
+
+# Floor Division
+floor_division_result = a // b
+print("Floor Division Result:", floor_division_result)
+
+# Power of a to b
+power_result = a ** b
+print("a to the power of b:", power_result)
+
+# Check if a and b have equal values
+equal_values = (a == b)
+print("Do 'a' and 'b' have equal values?", equal_values)
+```
+
+This program will take two inputs 'a' and 'b', perform the floor division, calculate 'a' to the power of 'b', and check if 'a' and 'b' have equal values.
