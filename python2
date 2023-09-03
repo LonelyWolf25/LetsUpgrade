@@ -1,0 +1,17 @@
+You can create a Python program to calculate the area of a square based on the side length by defining an `area()` function as follows:
+
+```python
+def area(side_length):
+    return side_length ** 2
+
+# Taking user input for the side length of the square
+side_length = float(input("Enter the side length of the square: "))
+
+# Calculate the area using the area() function
+square_area = area(side_length)
+
+# Print the calculated area
+print("The area of the square with side length", side_length, "is:", square_area)
+```
+
+This program defines an `area()` function that takes the side length as input and calculates the area of the square. It then takes user input for the side length, calls the `area()` function to calculate the area, and prints the result.
