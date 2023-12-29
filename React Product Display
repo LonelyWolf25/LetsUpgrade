@@ -1,5 +1,5 @@
-Sure, I can provide you with a simple example of a product display page using React.js. Before you start, make sure you have Node.js and npm installed on your machine. You can create a new React app using Create React App:
-
+//Sure, I can provide you with a simple example of a product display page using React.js. Before you start, make sure you have Node.js and npm installed on your machine. You can create a new React app using Create React App:
+// Create a product display page using React.js that features a header, product cards, and a footer with a button.
 ```bash
 npx create-react-app product-display-page
 cd product-display-page
