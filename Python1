@@ -1,1 +1,30 @@
-/
+/* Write a Python program to classify a given number into one of three categories: negative, zero, or positive. The program should take an integer input and print out one of the following statements based on the input:
+
+"The number is negative." if the number is less than zero.
+"The number is zero." if the number is exactly zero.
+"The number is positive." if the number is more than zero.
+*/
+
+```python
+def classify_number(num):
+    if num < 0:
+        print("The number is negative.")
+    elif num == 0:
+        print("The number is zero.")
+    else:
+        print("The number is positive.")
+
+# Take user input as an integer
+user_input = input("Enter an integer: ")
+
+# Validate if the input is a valid integer
+try:
+    user_number = int(user_input)
+    classify_number(user_number)
+except ValueError:
+    print("Invalid input. Please enter a valid integer.")
+```
+
+This program defines a function `classify_number` that takes an integer as input and prints out the corresponding classification 
+based on the rules you provided. The program then takes user input, converts it to an integer (handling potential ValueError if the input is not a valid integer), 
+and calls the `classify_number` function with the user's input./
